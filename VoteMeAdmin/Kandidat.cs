@@ -92,11 +92,7 @@ namespace VoteMeAdmin
                 var fileName = openFileDialog1.FileName;
                 targetGambar = Path.Combine("C://Users/Hacim/source/repos/VoteMeAdmin/CDN/", Path.GetFileName(fileName));
                 System.IO.File.Copy(fileName, targetGambar);
-                if (pictureBox1.Image != null)
-                {
-                    pictureBox1.Image.Dispose();
-                    pictureBox1.Image = Image.FromFile(targetGambar);
-                }
+                pictureBox1.Image = new Bitmap(targetGambar);
                 txtFoto.Text = targetGambar;
             }
             
