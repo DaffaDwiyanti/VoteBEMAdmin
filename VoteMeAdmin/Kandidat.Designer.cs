@@ -134,6 +134,7 @@
             this.txtFoto.Name = "txtFoto";
             this.txtFoto.Size = new System.Drawing.Size(118, 20);
             this.txtFoto.TabIndex = 9;
+            this.txtFoto.TextChanged += new System.EventHandler(this.txtFoto_TextChanged);
             // 
             // button1
             // 
